@@ -1,0 +1,13 @@
+Se encontraró la secuencia 2 veces.
+    Posiciones: { (1,3)  (22,24) } 
+
+La secuencia de ADN se dividió en 3 subsecuencias.
+    Subsecuencia 1:
+        Peso:  289.2 g/mol 
+        Representación:  c
+    Subsecuencia 2:
+        Peso:  6214.799999999998 g/mol 
+        Representación:  cgggggggggggggggggg
+    Subsecuencia 3:
+        Peso:  8053.199999999997 g/mol 
+        Representación:  ttttttttttaaaaaaaaaaaaaaaa
