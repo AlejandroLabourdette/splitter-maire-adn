@@ -37,12 +37,7 @@ def get_subsequences(dna: str, seq: str) -> list[int]:
     
 def analize_subsequence(sequence: str):
     sum = 0
-    bases_count = {}
-    bases_count['a'] = 0
-    bases_count['c'] = 0
-    bases_count['g'] = 0
-    bases_count['t'] = 0
-    bases_count['total'] = 0
+    bases_count = {'total': 0, 'a': 0, 'c': 0, 'g': 0, 't': 0}
     for c in sequence:
         if c == 'a':
             sum += 313.2
