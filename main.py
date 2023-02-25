@@ -24,9 +24,12 @@ def analyze_enzyme_in_dna(dna: str, seq: str, output_file):
     subsequences = get_subsequences(dna, seq)
 
     output_file.write(INDENT + "Se encontraró la secuencia " + str(len(positions_found)) + " veces.\n")
+    if len(positions_found) == 0:
+        return
+    
     positions_str = ""
     for i in positions_found:
-        positions_str += " (" + str(i) + "," + str(i+seq_len) + ") "    
+        positions_str += " (" + str(i) + "-" + str(i+seq_len) + ") "    
     output_file.write(INDENT*2 + "Posiciones en las que se encontró: {" + positions_str + "} \n\n")
 
 

@@ -1,23 +1,9 @@
 Análisis de la enzima: EcoRI. Patrón: gaattc
     Se encontraró la secuencia 0 veces.
-        Posiciones en las que se encontró: {} 
-
-    La secuencia de ADN se dividió en 1 subsecuencias.
-        Subsecuencia 1:
-            Peso:  19151.400000000023 g/mol 
-            Conteo de bases:    Total:62    A:14    C:24    G:21    T:3 
-            Representación:  aaaaaaaaaagaatcgcggccgcaagcttccccccccccccccgcggccgcggggggggggg
 
 
 Análisis de la enzima: BamHI. Patrón: ggatcc
     Se encontraró la secuencia 0 veces.
-        Posiciones en las que se encontró: {} 
-
-    La secuencia de ADN se dividió en 1 subsecuencias.
-        Subsecuencia 1:
-            Peso:  19151.400000000023 g/mol 
-            Conteo de bases:    Total:62    A:14    C:24    G:21    T:3 
-            Representación:  aaaaaaaaaagaatcgcggccgcaagcttccccccccccccccgcggccgcggggggggggg
 
 
 Análisis de la enzima: HindIII. Patrón: aagctt
