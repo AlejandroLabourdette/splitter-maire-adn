@@ -35,8 +35,14 @@ def get_positions_found(dna: str, seq: str) -> list[int]:
 def get_subsequences(dna: str, seq: str) -> list[int]:
     return dna.split(seq)
     
-def compute_weight(sequence: str) -> float:
+def analize_subsequence(sequence: str):
     sum = 0
+    bases_count = {}
+    bases_count['a'] = 0
+    bases_count['c'] = 0
+    bases_count['g'] = 0
+    bases_count['t'] = 0
+    bases_count['total'] = 0
     for c in sequence:
         if c == 'a':
             sum += 313.2
@@ -49,7 +55,9 @@ def compute_weight(sequence: str) -> float:
         else:
             print('Caracter inesperado en la secuencia de adn: ' + c)
             sys.exit(2)
-    return sum
+        bases_count[c] += 1
+        bases_count['total'] += 1
+    return sum, bases_count
 
 def main(argv: list[str]):
     parser = arg_parser()
@@ -74,7 +82,14 @@ def main(argv: list[str]):
     output_file.write("La secuencia de ADN se dividió en " + str(len(positions_found)+1) + " subsecuencias.\n")
     for i in range(len(subsequences)):
         output_file.write("    Subsecuencia "+str(i+1)+":\n")
-        output_file.write("        Peso:  " + str(compute_weight(subsequences[i])) + " g/mol \n")
+        weight, bases_count = analize_subsequence(subsequences[i])
+        output_file.write("        Peso:  " + str(weight) + " g/mol \n")
+        total = "   Total:" + str(bases_count['total'])
+        a = "   A:" + str(bases_count['a'])
+        c = "   C:" + str(bases_count['c'])
+        g = "   G:" + str(bases_count['g'])
+        t = "   T:" + str(bases_count['t'])
+        output_file.write("        Conteo de bases:" + total + a + c + g + t + " \n")
         output_file.write("        Representación:  " + subsequences[i] + "\n")
 
 if __name__ == "__main__":

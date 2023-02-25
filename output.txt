@@ -4,10 +4,13 @@ Se encontraró la secuencia 2 veces.
 La secuencia de ADN se dividió en 3 subsecuencias.
     Subsecuencia 1:
         Peso:  289.2 g/mol 
+        Conteo de bases:   Total:1   A:0   C:1   G:0   T:0 
         Representación:  c
     Subsecuencia 2:
         Peso:  6214.799999999998 g/mol 
+        Conteo de bases:   Total:19   A:0   C:1   G:18   T:0 
         Representación:  cgggggggggggggggggg
     Subsecuencia 3:
         Peso:  8053.199999999997 g/mol 
+        Conteo de bases:   Total:26   A:16   C:0   G:0   T:10 
         Representación:  ttttttttttaaaaaaaaaaaaaaaa
