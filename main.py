@@ -26,7 +26,7 @@ def analyze_enzyme_in_dna(dna: str, seq: str, output_file):
     positions_found = get_positions_found(dna, seq)
     subsequences = get_subsequences(dna, seq)
 
-    output_file.write(INDENT + "Se encontraró la secuencia " + str(len(positions_found)) + " veces.\n")
+    output_file.write(INDENT + "Se encontró la secuencia " + str(len(positions_found)) + " veces.\n")
     if len(positions_found) == 0:
         return
     
@@ -100,7 +100,7 @@ def main(argv: list[str]):
     }
 
     for enzyme_name, pattern in enzyme_patterns.items():
-        output_file.write("Análisis de la enzima: "+ enzyme_name+". Patrón: " + pattern + "\n")
+        output_file.write("Análisis de la enzima: "+ enzyme_name+", patrón: " + pattern + "\n")
         analyze_enzyme_in_dna(dna, pattern, output_file)
         output_file.write("\n\n")
     
