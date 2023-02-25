@@ -19,7 +19,7 @@ def get_files_paths(parser: argparse.ArgumentParser, argv: list[str]):
     return args
 
 def sanitize_dna_str(dna: str) -> str:
-    return dna.lower().replace(' ', '')
+    return dna.lower().replace(' ', '').replace('\n', '')
 
 def analyze_enzyme_in_dna(dna: str, seq: str, output_file):
     seq_len = len(seq)
@@ -77,7 +77,7 @@ def analize_subsequence(sequence: str):
         elif c == 't':
             sum += 304.2
         else:
-            print('Caracter inesperado en la secuencia de adn: ' + c)
+            print('Caracter inesperado en la secuencia de adn: "' + c + '"')
             sys.exit(2)
         bases_count[c] += 1
         bases_count['total'] += 1
