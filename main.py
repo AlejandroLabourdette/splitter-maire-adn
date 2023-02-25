@@ -18,6 +18,9 @@ def get_files_paths(parser: argparse.ArgumentParser, argv: list[str]):
         args.output = 'output.txt'
     return args
 
+def sanitize_dna_str(dna: str) -> str:
+    return dna.lower().replace(' ', '')
+
 def analyze_enzyme_in_dna(dna: str, seq: str, output_file):
     seq_len = len(seq)
     positions_found = get_positions_found(dna, seq)
@@ -84,7 +87,8 @@ def main(argv: list[str]):
     parser = arg_parser()
     args = get_files_paths(parser, argv)
 
-    dna = open(args.input, "r").read()
+    dna_input = open(args.input, "r").read()
+    dna = sanitize_dna_str(dna_input)
     output_file = open(args.output, "w")
 
     enzyme_patterns = {

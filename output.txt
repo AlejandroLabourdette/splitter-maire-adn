@@ -8,7 +8,7 @@ Análisis de la enzima: BamHI. Patrón: ggatcc
 
 Análisis de la enzima: HindIII. Patrón: aagctt
     Se encontraró la secuencia 1 veces.
-        Posiciones en las que se encontró: { (23,29) } 
+        Posiciones en las que se encontró: { (23-29) } 
 
     La secuencia de ADN se dividió en 2 subsecuencias.
         Subsecuencia 1:
@@ -23,7 +23,7 @@ Análisis de la enzima: HindIII. Patrón: aagctt
 
 Análisis de la enzima: NotI. Patrón: gcggccgc
     Se encontraró la secuencia 2 veces.
-        Posiciones en las que se encontró: { (15,23)  (43,51) } 
+        Posiciones en las que se encontró: { (15-23)  (43-51) } 
 
     La secuencia de ADN se dividió en 3 subsecuencias.
         Subsecuencia 1:
