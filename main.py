@@ -12,9 +12,12 @@ def arg_parser() -> argparse.ArgumentParser:
 
 def get_files_paths(parser: argparse.ArgumentParser, argv: list[str]):
     args = parser.parse_args(argv)
-    if args.input == None or args.sequence == None:
-        print('Arguments --input and --sequence should be included in the command. Please execute python3 main.py -h to see more information.')
-        sys.exit(2)
+    if args.input == None:
+        args.input = 'dna.txt'
+    if args.sequence == None:
+        args.sequence = 'match.txt'
+    if args.output == None:
+        args.output = 'output.txt'
     return args
 
 def get_positions_found(dna: str, seq: str) -> list[int]:
